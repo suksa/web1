@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="500" height="500" style="border:1px solid black"></canvas>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            
+            context.translate(canvas.width /2,canvas.height /2)
+            context.scale(-1,1);
+            
+            context.font = '30pt dotum';
+            context.fillStyle = 'blue';
+            context.textAlign = 'center'
+            context.fillText('hello world',0,0)
+        }
+    </script>
+</body>
